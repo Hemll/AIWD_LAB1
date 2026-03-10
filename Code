@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Online Event Registration Portal</title>
+</head>
+
+<body>
+
+<h1>Online Event Registration</h1>
+
+<!-- Event Banner Image -->
+<img src="event-banner.jpg" alt="Event Banner" width="600">
+
+<h2>Event Promotion Video</h2>
+
+<!-- Promotional Video -->
+<video width="600" controls>
+<source src="event-video.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+
+<h2>Event Intro Audio</h2>
+
+<!-- Background Audio -->
+<audio controls>
+<source src="event-audio.mp3" type="audio/mpeg">
+Your browser does not support the audio tag.
+</audio>
+
+<h2>Register for the Event</h2>
+
+<form>
+
+Name:
+<input type="text" name="name"><br><br>
+
+Email:
+<input type="email" name="email"><br><br>
+
+Event Date:
+<input type="date" name="date"><br><br>
+
+Gender:
+<input type="radio" name="gender" value="male"> Male
+<input type="radio" name="gender" value="female"> Female
+<br><br>
+
+Select Event Type:
+<select>
+<option>Workshop</option>
+<option>Seminar</option>
+<option>Conference</option>
+<option>Webinar</option>
+</select>
+
+<br><br>
+
+Comments:
+<br>
+<textarea rows="4" cols="40"></textarea>
+
+<br><br>
+
+Upload ID Proof:
+<input type="file">
+
+<br><br>
+
+<input type="submit" value="Register">
+
+</form>
+
+</body>
+</html>
