@@ -1,2 +1,2 @@
-# AIWD_LAB
+# AIWD_LAB1
 Artificial Intelligence in Web Development Laboratory
