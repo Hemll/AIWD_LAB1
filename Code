@@ -1,52 +1,61 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Online Event Registration Portal</title>
+<title>Online Event Registration</title>
+
+<!-- External CSS Linking -->
+<link rel="stylesheet" href="style1.css">
+
 </head>
 
 <body>
 
+<div class="container">
+
 <h1>Online Event Registration</h1>
 
-<!-- Event Banner Image -->
-<img src="event-banner.jpg" alt="Event Banner" width="600">
+<div class="media-section">
 
-<h2>Event Promotion Video</h2>
+<img src="C:\Users\hemal\Downloads\echnolo.png" alt="Event Banner" width="400">
 
-<!-- Promotional Video -->
-<video width="600" controls>
-<source src="event-video.mp4" type="video/mp4">
-Your browser does not support the video tag.
+<video width="400" controls>
+<source src="C:\Users\hemal\Downloads\videoplayback.1768882372167.publer.com.mp4" type="video/mp4">
 </video>
 
-<h2>Event Intro Audio</h2>
-
-<!-- Background Audio -->
 <audio controls>
-<source src="event-audio.mp3" type="audio/mpeg">
-Your browser does not support the audio tag.
+<source src="C:\Users\hemal\Downloads\sb_adriftamonginfinitestars(chosic.com).mp3" type="audio/mpeg">
 </audio>
+
+</div>
 
 <h2>Register for the Event</h2>
 
 <form>
 
-Name:
-<input type="text" name="name"><br><br>
+<label>Name:</label>
+<input type="text" name="name" placeholder="Enter your name" required minlength="3">
 
-Email:
-<input type="email" name="email"><br><br>
-
-Event Date:
-<input type="date" name="date"><br><br>
-
-Gender:
-<input type="radio" name="gender" value="male"> Male
-<input type="radio" name="gender" value="female"> Female
 <br><br>
 
-Select Event Type:
-<select>
+<label>Email:</label>
+<input type="email" name="email" placeholder="Enter your email" required>
+
+<br><br>
+
+<label>Event Date:</label>
+<input type="date" name="date" required>
+
+<br><br>
+
+<label>Gender:</label>
+<input type="radio" name="gender" value="Male" required> Male
+<input type="radio" name="gender" value="Female"> Female
+
+<br><br>
+
+<label>Select Event Type:</label>
+<select required>
+<option value="">Select Event</option>
 <option>Workshop</option>
 <option>Seminar</option>
 <option>Conference</option>
@@ -55,20 +64,21 @@ Select Event Type:
 
 <br><br>
 
-Comments:
-<br>
-<textarea rows="4" cols="40"></textarea>
+<label>Comments:</label><br>
+<textarea rows="4" cols="40" placeholder="Enter comments"></textarea>
 
 <br><br>
 
-Upload ID Proof:
-<input type="file">
+<label>Upload ID Proof:</label>
+<input type="file" accept=".pdf,.jpg,.png" required>
 
 <br><br>
 
 <input type="submit" value="Register">
 
 </form>
+
+</div>
 
 </body>
 </html>
